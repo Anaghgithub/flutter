@@ -41,9 +41,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: LiteRollingSwitch(
             value: true,
             textOn: 'online',
+            textOnColor: Colors.white,
+            
             textOff: 'offline',
-            colorOn: Colors.green,
-            colorOff: Colors.red,
+            textOffColor: Colors.white,
+            colorOn:Color.fromRGBO(63, 102, 36, 1),
+            colorOff: Color.fromRGBO(176, 17, 3, 1),
+
             iconOn: Icons.done,
             iconOff: Icons.close,
             textSize: 18.0,

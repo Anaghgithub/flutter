@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ui_3/widgets/appbar.dart';
+import 'package:ui_3/widgets/bottom.dart';
 import 'package:ui_3/widgets/container.dart';
 import 'package:ui_3/widgets/cutomcard.dart';
 import 'package:ui_3/widgets/listview.dart';
-import 'secondpage.dart'; // Import the second page
+import '../history_page/history.dart'; // Import the second page
 
-void main() {
-  runApp(const HomePage());
-}
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -68,7 +67,7 @@ class HomePage extends StatelessWidget {
           },
           child: const Icon(Icons.navigation),
         ),
-        // bottomNavigationBar: Bottombar(),
+        bottomNavigationBar: Bottombar(),
       ),
     );
   }
